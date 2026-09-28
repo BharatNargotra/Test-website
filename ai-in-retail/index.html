@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Recommendations, demand forecasting, inventory optimization, customer service, and visual search.">
+<title>AI in Retail — Caira AI Research Hub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f7f8fb;color:#18202f;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+header{border-bottom:1px solid #e2e6ee;background:#fff}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.03em}
+.navlinks{display:flex;gap:18px;font-size:13px;color:#667085;flex-wrap:wrap}
+main{padding:55px 0 90px}
+.breadcrumb{font-size:13px;color:#778195;margin-bottom:30px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;color:#5b61e8}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.02;letter-spacing:-.055em;margin:12px 0 18px}
+.lead{font-size:20px;color:#667085;max-width:850px}
+article{background:#fff;border:1px solid #e1e5ec;border-radius:18px;padding:38px 46px;margin-top:35px}
+h2{font-size:29px;line-height:1.2;letter-spacing:-.035em;margin:42px 0 14px}
+p{color:#505b6e;font-size:16px}
+.highlightable{padding:5px 8px;border-radius:6px}
+.highlightable:hover{background:#eef0ff}
+.note{border-left:4px solid #5b61e8;background:#eef0ff;padding:18px 20px;margin:28px 0;border-radius:0 10px 10px 0}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.tag{border:1px solid #dfe4ec;border-radius:999px;padding:5px 10px;font-size:12px;color:#667085}
+footer{border-top:1px solid #e2e6ee;background:#fff;padding:30px 0;color:#778195;font-size:13px}
+@media(max-width:700px){article{padding:24px 20px}.navlinks{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="/">Caira AI Research Hub</a>
+<nav class="navlinks"><a href="/ai-overview/">Artificial Intelligence</a><a href="/machine-learning/">Machine Learning</a><a href="/deep-learning/">Deep Learning</a><a href="/generative-ai/">Generative AI</a><a href="/large-language-models/">Large Language Models</a><a href="/transformers/">Transformers</a></nav>
+</div></header>
+<main class="wrap">
+<div class="breadcrumb"><a href="/">Home</a> / AI in Retail</div>
+<div class="eyebrow">AI KNOWLEDGE BASE · ARTICLE 19</div>
+<h1>AI in Retail</h1>
+<p class="lead">Recommendations, demand forecasting, inventory optimization, customer service, and visual search. This long-form article is intentionally structured with substantial, uniquely addressable paragraphs for crawling, retrieval, citations, and exact source highlighting.</p>
+<article>
+<section><h2 id="ai-in-retail-section-1">1. Core concepts</h2><p class="highlightable" id="ai-in-retail-paragraph-1">Artificial intelligence applications are usually systems made from several components rather than a single model. A typical application may collect data, normalize it, store documents, retrieve relevant information, call a model, validate the response, and present a result to the user. Each stage affects the final quality.</p></section><section><h2 id="ai-in-retail-section-2">2. Data and architecture</h2><p class="highlightable" id="ai-in-retail-paragraph-2">For knowledge-search applications, the relationship between a question and its supporting evidence is especially important. A retrieval system can return several related passages, but a related passage is not necessarily sufficient evidence for the exact question. Testing this distinction is useful when measuring answerability and citation behavior.</p></section><section><h2 id="ai-in-retail-section-3">3. Retrieval and evidence</h2><p class="highlightable" id="ai-in-retail-paragraph-3">Document structure also affects retrieval. Descriptive headings, complete paragraphs, stable URLs, meaningful metadata, and sensible chunk boundaries make it easier to locate the right evidence. If a crawler removes navigation elements while preserving article sections, the resulting corpus can be much more useful for semantic search.</p></section><section><h2 id="ai-in-retail-section-4">4. Search quality</h2><p class="highlightable" id="ai-in-retail-paragraph-4">Hybrid retrieval combines different signals. Dense vector similarity can identify paraphrases and related concepts, while lexical search can preserve exact terms, names, numbers, and rare identifiers. Reciprocal Rank Fusion, commonly called RRF, can combine rankings from multiple retrieval systems without requiring their raw scores to be directly comparable.</p></section><section><h2 id="ai-in-retail-section-5">5. Infrastructure and performance</h2><p class="highlightable" id="ai-in-retail-paragraph-5">Vector indexes such as HNSW are designed to make approximate nearest-neighbor search efficient over high-dimensional embeddings. Important engineering considerations include index construction, search parameters, memory usage, filtering behavior, update patterns, and the trade-off between retrieval recall and latency.</p></section><section><h2 id="ai-in-retail-section-6">6. Model behavior</h2><p class="highlightable" id="ai-in-retail-paragraph-6">Large language models operate on tokens rather than raw characters or words. Transformer attention lets a model represent relationships between tokens, while training and instruction tuning influence how the model responds to different prompts. Model output should still be evaluated against the evidence available to the application.</p></section><section><h2 id="ai-in-retail-section-7">7. Practical workflow</h2><p class="highlightable" id="ai-in-retail-paragraph-7">RAG pipelines commonly split documents into chunks, generate embeddings, retrieve candidates, optionally rerank them, and provide selected context to a generation model. A robust system records retrieval results separately from the generated answer so that poor retrieval is not mistaken for a generation problem.</p></section><section><h2 id="ai-in-retail-section-8">8. Evaluation methodology</h2><p class="highlightable" id="ai-in-retail-paragraph-8">AI evaluation should include ordinary questions as well as difficult cases. Useful test sets include exact factual questions, paraphrased questions, questions containing dates or numbers, related-but-insufficient questions, ambiguous questions, and questions whose answer does not exist in the corpus.</p></section><section><h2 id="ai-in-retail-section-9">9. Monitoring and analytics</h2><p class="highlightable" id="ai-in-retail-paragraph-9">Production monitoring can measure query volume, latency, retrieval depth, click-through on citations, failed searches, answerability rates, and user feedback. These measurements help teams identify whether a change improved the underlying search experience or merely changed the wording of generated responses.</p></section><section><h2 id="ai-in-retail-section-10">10. Source traceability</h2><p class="highlightable" id="ai-in-retail-paragraph-10">An important design principle is traceability. When an answer depends on a document, the system should preserve enough information to locate the supporting passage again. A citation may contain a URL, section selector, DOM path, text fingerprint, or another stable reference that allows the interface to navigate directly to the source paragraph.</p></section><section><h2 id="ai-in-retail-section-11">11. Reproducibility</h2><p class="highlightable" id="ai-in-retail-paragraph-11">A second consideration is reproducibility. The same question should be testable against the same corpus and configuration so that changes can be compared over time. Storing query text, retrieved document identifiers, ranking positions, model configuration, and response metadata makes debugging considerably easier.</p></section><section><h2 id="ai-in-retail-section-12">12. Answerability</h2><p class="highlightable" id="ai-in-retail-paragraph-12">Another useful practice is to distinguish retrieval relevance from answerability. A document can be relevant to a subject without containing enough information to answer a particular question. For example, a passage discussing events in 1877 may be topically related to a question about 1887 while still being insufficient evidence for that exact date.</p></section><section><h2 id="ai-in-retail-section-13">13. Highlighting</h2><p class="highlightable" id="ai-in-retail-paragraph-13">Source highlighting adds another layer to this workflow. When a user clicks a citation, the interface can navigate to the original page and visually mark the exact paragraph or section that supported the answer. Stable selectors and text fingerprints can help recover the intended passage even when a page contains many similar pieces of text.</p></section><section><h2 id="ai-in-retail-section-14">14. Engineering takeaways</h2><p class="highlightable" id="ai-in-retail-paragraph-14">The practical goal is not simply to produce fluent answers. A trustworthy AI search system should retrieve useful evidence, recognize when evidence is insufficient, expose the supporting source, and make the relationship between the answer and the source understandable to the user.</p></section>
+<div class="note"><strong>Caira highlighting test:</strong> Each paragraph above has a stable HTML id. Use a Caira citation from this page and verify that navigation lands on the exact supporting paragraph, not merely the article.</div>
+<h2 id="ai-in-retail-faq">Frequently Asked Questions</h2>
+<p class="highlightable" id="ai-in-retail-faq-answer-1">How should AI search be evaluated? Evaluate retrieval separately from generation. Measure whether the correct source was retrieved, whether the evidence actually answers the question, and whether the final response accurately represents that evidence.</p>
+<p class="highlightable" id="ai-in-retail-faq-answer-2">What makes a paragraph useful for highlighting? A paragraph should contain enough unique text to identify it reliably. Stable headings, semantic HTML, predictable DOM structure, and a text fingerprint can make citation navigation more robust.</p>
+<h2>Related AI topics</h2>
+<p><a href="/ai-in-finance/">AI in Finance</a> · <a href="/ai-in-education/">AI in Education</a> · <a href="/future-of-ai/">Future of AI</a> · </p>
+</article>
+</main>
+<footer><div class="wrap">Caira AI Research Hub · Synthetic test content for crawling, retrieval, citations, and highlighting.</div></footer>
+</body>
+</html>

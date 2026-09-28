@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-DOMAIN.example/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-overview/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/machine-learning/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/deep-learning/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/generative-ai/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/large-language-models/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/transformers/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/rag/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/vector-databases/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/embeddings/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-agents/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/computer-vision/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/nlp/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/speech-ai/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-safety/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-evaluation/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-in-healthcare/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-in-finance/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-in-education/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/ai-in-retail/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/future-of-ai/</loc></url>
+</urlset>
